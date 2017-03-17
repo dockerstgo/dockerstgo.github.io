@@ -1,1 +1,125 @@
-Hello World
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Global Mentor Week</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<style>
+
+		body{
+			background-color: #FFF;
+		}
+			.reveal section img{
+				border:none;
+				box-shadow: none;
+				background: transparent;
+			}
+
+			h1, h3{
+
+			}
+
+			.option-windows{
+				display: block;
+				height: auto;
+				width: 100%;
+				text-align: center;
+			}
+
+			.option-windows li{
+				display: inline-block;
+				width: 30%;
+				float: left;
+				height: 300px;
+				margin:0 auto;
+				margin-right:30px;
+			}
+
+			.option-windows li img{
+				max-width: 300px;
+				height: auto;
+			}
+
+			.cont-img-option{
+				padding:15px;
+				background-color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+        <section data-background-image="img/fondo1.png">
+	        <h1 style="font-size: 48px;">Presentaciones</h1>
+					<ul>
+						 <li><a style="color:#FFF; text-decoration: underline;" href="./workshop-1/">Workshop 1</a></li>						 
+					</ul>
+      </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
